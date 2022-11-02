@@ -36,6 +36,8 @@ function intialize() {
     }
 
     // Create the key board
+    let keyboardPanel = document.querySelector('#keyboard');
+
     let keyboard = [
         ["Q", "W", "E", "R", "T", "Y", "U", "I", "O", "P"],
         ["A", "S", "D", "F", "G", "H", "J", "K", "L", " "],
@@ -47,9 +49,11 @@ function intialize() {
         let keyboardRow = document.createElement("div");
         keyboardRow.classList.add("keyboard-row");
 
+        
         for (let j = 0; j < currRow.length; j++) {
             let keyTile = document.createElement("div");
-
+           
+            
             let key = currRow[j];
             keyTile.innerText = key;
             if (key == "Enter") {
@@ -61,7 +65,7 @@ function intialize() {
             else if ("A" <= key && key <= "Z") {
                 keyTile.id = "Key" + key; // "Key" + "A";
             } 
-
+            
             keyTile.addEventListener("click", processKey);
 
             if (key == "Enter") {
@@ -71,7 +75,7 @@ function intialize() {
             }
             keyboardRow.appendChild(keyTile);
         }
-        document.body.appendChild(keyboardRow);
+        keyboardPanel.append(keyboardRow);
     }
     
 

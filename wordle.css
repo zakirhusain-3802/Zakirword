@@ -15,7 +15,7 @@ hr {
 
 #board {
     width: 350px;
-    height: 420px;
+    height: 380px;
     margin: 0 auto;
     margin-top: 3px;
     display: flex;
@@ -38,6 +38,14 @@ hr {
     align-items: center;
 }
 
+#keyboard {
+    max-width: 100%;
+    width: 95%;
+    margin-inline: auto;
+    margin-top: 3rem;
+    margin-left: 3.2rem;
+}
+
 .correct {
     background-color: #6AAA64;
     color: white;
@@ -53,20 +61,19 @@ hr {
 .absent {
     background-color: #787C7E;
     color: white;
-    border-color:white;
+    border-color: white;
 }
 
 
 .keyboard-row {
-    width: 400px;
-
+    width: 380px;
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
 }
 
 .key-tile {
-    width: 36px;
+    width: 30px;
     height: 40px;
     margin: 1px;
     border: 1px solid lightgray;
@@ -91,4 +98,21 @@ hr {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+@media (max-width: 768px) {
+    #keyboard {
+        margin-top: 3rem;
+        margin-left: 1.7rem;
+    }
+    #board{
+        margin-left: 1.8rem;
+    }
+}
+
+@media (min-width: 786px) and (max-width: 1240px){
+    #keyboard {
+        margin-top: 3rem;
+        margin-left: 2.5rem;
+    }
 }
