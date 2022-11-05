@@ -48,11 +48,7 @@ hr {
     margin-left: 3.2rem;
 }
 
-.correct {
-    background-color: #6AAA64;
-    color: white;
-    border-color: white;
-}
+
 
 
 .keyboard-row {
@@ -65,7 +61,24 @@ hr {
 .key-tile {
     width: 30px;
     height: 35px;
-    margin: 1px;
+    margin: 2px;
+    border: 1px solid lightgray;
+    border-radius: 3px;
+    background-color: #CCCCFF;
+
+    /* Text */
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Akey-tile {
+    width: 30px;
+    height: 35px;
+    margin: 2px;
+    margin-left: 20px;
     border: 1px solid lightgray;
     border-radius: 3px;
     background-color: #CCCCFF;
@@ -81,7 +94,7 @@ hr {
 .enter-key-tile {
     width: 62px;
     height: 35px;
-    margin: 1px;
+    margin: 2px;
     border: 1px solid lightgray;
     border-radius: 3px;
     background-color: #2471A3;
@@ -100,6 +113,35 @@ hr {
     border-color: white;
 }
 
+#mod{
+    display: none;
+    position: fixed;
+    background-color: #2471A3;
+    height: 100 px;
+    width: 150px;
+    justify-content: center;
+    margin-left: 43%;
+    margin-top: 10%;
+    border-radius: 5px;
+    background-color: rgb(255, 255, 255);
+    border: 2px solid rgb(207, 205, 205);
+    z-index: 2;
+
+}
+.not{
+    width: 3px;
+    height: 35px;
+   background-color: rgb(255, 255, 255);
+   border: 1px solid rgb(255, 255, 255);
+   
+
+}
+
+.correct {
+    background-color: #6AAA64;
+    color: white;
+    border-color: white;
+}
 .absent {
     background-color: #787C7E;
     color: white;
@@ -108,10 +150,14 @@ hr {
 @media (max-width: 768px) {
     #keyboard {
         margin-top: 2rem;
-        margin-left: 1.6rem;
+        margin-left: 1rem;
     }
     #board{
-        margin-left: 1.8rem;
+        margin-left: 2rem;
+    }
+    #mod{
+        margin-left:   26%;
+        margin-top: 35%;
     }
 }
 

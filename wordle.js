@@ -70,7 +70,16 @@ function intialize() {
 
             if (key == "Enter") {
                 keyTile.classList.add("enter-key-tile");
-            } else {
+            } 
+            else if(key == " ")
+            {
+                keyTile.classList.add("not")
+            }
+            else if(key == "A")
+            {
+                keyTile.classList.add("Akey-tile")
+            }
+            else {
                 keyTile.classList.add("key-tile");
             }
             keyboardRow.appendChild(keyTile);
@@ -140,6 +149,7 @@ function update() {
         return;
     }
     
+    
     //start processing guess
     let correct = 0;
 
@@ -176,6 +186,8 @@ function update() {
 
         if (correct == width) {
             gameOver = true;
+            document.getElementById("mod").style.display="inline";
+            document.getElementById("answer").innerText = "You Win";
         }
     }
 
@@ -204,7 +216,8 @@ function update() {
             }
         }
     }
-
+    
+  
     row += 1; //start new row
     col = 0; //start at 0 for new row
 }
