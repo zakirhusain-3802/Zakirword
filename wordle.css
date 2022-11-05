@@ -14,7 +14,7 @@ hr {
 }
 
 #board {
-    width: 320px;
+    width: 340px;
     height: 360px;
     margin: 0 auto;
     margin-top: 3px;
@@ -27,7 +27,7 @@ hr {
 
     border: 2px solid lightgray;
     border-radius: 5px;
-    width: 50px;
+    width: 55px;
     height: 50px;
     margin: 2.5px;
 
