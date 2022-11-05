@@ -115,6 +115,8 @@ function processInput(e) {
     else if (e.code == "Backspace") {
         if (0 < col && col <= width) {
             col -=1;
+            document.getElementById("backdrop").style.display="none";
+
         }
         let currTile = document.getElementById(row.toString() + '-' + col.toString());
         currTile.innerText = "";
@@ -126,13 +128,22 @@ function processInput(e) {
 
     if (!gameOver && row == height) {
         gameOver = true;
-        document.getElementById("answer").innerText = word;
+
+        document.getElementById("backdrop").style.display="block";
+        document.getElementById("lose").style.display="block";
+        document.getElementById("answers").innerText = word;
+        // document.getElementById("answer").innerText = "Not in word list";
+        backdrop.addEventListener("click",()=>{
+            backdrop.style.display="none"
+        })
+        // document.getElementById("answer").innerText = word;
     }
 }
 
 function update() {
     let guess = "";
     document.getElementById("answer").innerText = "";
+    const backdrop= document.getElementById("backdrop");
 
     //string up the guesses into the word
     for (let c = 0; c < width; c++) {
@@ -145,7 +156,13 @@ function update() {
     console.log(guess);
 
     if (!guessList.includes(guess)) {
-        document.getElementById("answer").innerText = "Not in word list";
+        document.getElementById("backdrop").style.display="block";
+        document.getElementById("wrong").style.display="block";
+
+        // document.getElementById("answer").innerText = "Not in word list";
+        backdrop.addEventListener("click",()=>{
+            backdrop.style.display="none"
+        })
         return;
     }
     
@@ -186,8 +203,10 @@ function update() {
 
         if (correct == width) {
             gameOver = true;
-            document.getElementById("mod").style.display="inline";
-            document.getElementById("answer").innerText = "You Win";
+
+            document.getElementById("backdrop").style.display="block";
+            document.getElementById("win").style.display="block";
+            document.getElementById("answer").innerText = word;
         }
     }
 
@@ -217,7 +236,15 @@ function update() {
         }
     }
     
+   
+
+    backdrop.addEventListener("click",()=>{
+        backdrop.style.display="none"
+    })
   
+     document.querySelector(".key-tile").style.cursor="pointer"
+
+
     row += 1; //start new row
     col = 0; //start at 0 for new row
 }
