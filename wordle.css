@@ -1,6 +1,7 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
+    background-color: #374354;
 }
 
 hr {
@@ -26,10 +27,10 @@ hr {
     /* Box */
 
     border: 2px solid lightgray;
-    border-radius: 5px;
+    border-radius: 25px;
     width: 55px;
-    height: 50px;
-    margin: 2.5px;
+    height: 55px;
+    margin: 4px;
 
     /* Text */
     color: black;
@@ -62,9 +63,9 @@ hr {
     width: 30px;
     height: 35px;
     margin: 2px;
-    border: 1px solid lightgray;
+    border: 1px solid #80CCB5;
     border-radius: 3px;
-    background-color: #CCCCFF;
+    background-color: #80CCB5;
 
     /* Text */
     font-size: 20px;
@@ -72,6 +73,7 @@ hr {
     display: flex;
     justify-content: center;
     align-items: center;
+    color: white;
 }
 
 .Akey-tile {
@@ -79,9 +81,9 @@ hr {
     height: 35px;
     margin: 2px;
     margin-left: 20px;
-    border: 1px solid lightgray;
+    border: 1px solid #80CCB5;
     border-radius: 3px;
-    background-color: #CCCCFF;
+    background-color: #80CCB5;
 
     /* Text */
     font-size: 20px;
@@ -89,15 +91,16 @@ hr {
     display: flex;
     justify-content: center;
     align-items: center;
+    color: white;
 }
 
 .enter-key-tile {
     width: 62px;
     height: 35px;
     margin: 2px;
-    border: 1px solid lightgray;
+    border: 1px solid #80CCB5;
     border-radius: 3px;
-    background-color: #2471A3;
+    background-color: #F37B89;
 
     /* Text */
     color: rgb(255, 255, 255);
@@ -108,9 +111,9 @@ hr {
     align-items: center;
 }
 .present {
-    background-color: #C9B458;
+    background-color: #F9B033;
     color: white;
-    border-color: white;
+    border-color: #C9B458;
 }
 
 /* #mod{
@@ -209,8 +212,8 @@ hr {
 .not{
     width: 3px;
     height: 35px;
-   background-color: rgb(255, 255, 255);
-   border: 1px solid rgb(255, 255, 255);
+   background-color: #374354;
+   /* border: 1px solid rgb(255, 255, 255); */
    
 
 }
@@ -227,16 +230,16 @@ hr {
 .correct {
     background-color: #6AAA64;
     color: white;
-    border-color: white;
+    border-color: #6AAA64;
 }
 .absent {
-    background-color: #787C7E;
+    background-color: #F37B89;
     color: white;
-    border-color: white;
+    border-color: #F37B89;
 }
 @media (max-width: 768px) {
     #keyboard {
-        margin-top: 2rem;
+        margin-top: 4rem;
         margin-left: 1rem;
     }
     #board{
