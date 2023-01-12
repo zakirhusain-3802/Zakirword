@@ -15,6 +15,7 @@ canvas {
     width: 100%;
     height: 100%;
     z-index: -1;
+    background-color: transparent;
 }
 #title {
     font-size: 36px;
@@ -233,7 +234,7 @@ canvas {
     position: fixed;
     z-index: 2;
     display: none;
-    background-color: rgba(255, 253, 253, 0.075);
+    background-color: rgba(255, 253, 253, 0);
 }
 .absent {
     background-color: #F37B89;
@@ -254,11 +255,7 @@ canvas {
     #board{
         margin-left: 2rem;
     }
-    #mod{
-        
-        /* margin-left: 10rem;
-        margin-top: 35%; */
-    }
+    
     #win ,#lose,#wrong{
         top: 30%;
         left: 31%;
