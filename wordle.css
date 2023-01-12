@@ -143,15 +143,16 @@ canvas {
     position: fixed;
    
     height: 100 px;
-    width: 150px;
+    width: 155px;
     top: 30%;
     left: 44%;
+    color: #f7f7f7;
     justify-content: center;
     /* margin-left: 43%;
     margin-top: 10%; */
     margin-inline: auto;
     border-radius: 5px;
-    background-color: #CFD8DC;
+    background-color: #0d3648;
    
     z-index: 5;
    
@@ -159,8 +160,8 @@ canvas {
 }
 #win h2
 {   margin: 0;
-    margin-bottom: 1rem;
-    color: #239B56;
+    margin-bottom: 1.5rem;
+    color:#F9B033;
     letter-spacing: 0.3rem;
     font-size: 30px;
     font-weight: bolder;
