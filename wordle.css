@@ -3,6 +3,7 @@ body {
     text-align: center;
     background-color: #374354;
     overflow-y: hidden;
+    overscroll-behavior: none;
 }
 
 hr {
@@ -269,6 +270,14 @@ canvas {
         margin-top: 3rem;
         margin-left: 2.5rem;
     }
-    
-    
+    /* ... (additional adjustments for this range) ... */
 }
+
+body, div, span, p {
+    user-select: none;
+    -webkit-touch-callout: none;
+    -webkit-tap-highlight-color: transparent;
+}
+
+
+
