@@ -2,7 +2,6 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
     background-color: #374354;
-    overflow-y: hidden;
     overscroll-behavior: none;
 }
 
@@ -254,8 +253,14 @@ canvas {
         margin-top: 4rem;
         margin-left: 1rem;
     }
+
     #board{
         margin-left: 2rem;
+    }
+    body, div, span, p {
+        user-select: none;
+        -webkit-touch-callout: none;
+        -webkit-tap-highlight-color: transparent;
     }
     
     #win ,#lose,#wrong{
@@ -273,11 +278,7 @@ canvas {
     /* ... (additional adjustments for this range) ... */
 }
 
-body, div, span, p {
-    user-select: none;
-    -webkit-touch-callout: none;
-    -webkit-tap-highlight-color: transparent;
-}
+
 
 
 
