@@ -278,6 +278,9 @@ body, div, span, p {
     -webkit-touch-callout: none;
     -webkit-tap-highlight-color: transparent;
 }
+#div1{
+    overflow: hidden;
+}
 
 
 
